@@ -6,17 +6,22 @@ const quizRoutes = require('./routes/quizRoutes');
 
 const app = express();
 
-// CORS Middleware - BEFORE all routes
-app.use(cors({
-  origin: '*',  // For development, you can change this to your specific domains later
-  methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept']
-}));
+// CORS configuration - Must be first!
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type,Authorization');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  
+  // Handle preflight
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+  
+  next();
+});
 
-// Handle preflight requests
-app.options('*', cors());
-
-// Middleware
+// Regular middleware
 app.use(express.json());
 
 // Routes
@@ -35,5 +40,4 @@ if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 }
 
-// For Vercel
 module.exports = app;
