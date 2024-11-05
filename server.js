@@ -6,42 +6,50 @@ const quizRoutes = require('./routes/quizRoutes');
 
 const app = express();
 
-// CORS configuration - Must be first!
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type,Authorization');
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
-  
-  // Handle preflight
-  if (req.method === 'OPTIONS') {
-    return res.status(200).end();
-  }
-  
-  next();
+// Connect to MongoDB at startup
+connectDB().then(() => {
+  console.log('MongoDB connected successfully');
+}).catch(err => {
+  console.error('MongoDB connection error:', err);
 });
 
-// Regular middleware
+// Increase timeout
+app.set('timeout', 30000); // 30 seconds
+
+// CORS
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
+
+// Simple test endpoint
+app.get('/api/test', (req, res) => {
+  res.json({ message: 'API is working' });
+});
+
+// Health check with DB status
+app.get('/api/health', async (req, res) => {
+  try {
+    await mongoose.connection.db.admin().ping();
+    res.json({ 
+      status: 'ok',
+      db: 'connected',
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    res.status(500).json({ 
+      status: 'error',
+      db: 'disconnected',
+      error: error.message 
+    });
+  }
+});
 
 // Routes
 app.use('/api/users', userRoutes);
 app.use('/api/quizzes', quizRoutes);
-
-// Error handling
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({ message: 'Something broke!' });
-});
-
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'Server is running' });
-});
-
-// For local development
-if (process.env.NODE_ENV !== 'production') {
-  const PORT = process.env.PORT || 5050;
-  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-}
 
 module.exports = app;
