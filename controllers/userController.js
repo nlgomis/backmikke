@@ -51,7 +51,7 @@ const loginUser = async (req, res) => {
 
         const user = await User.findOne({ email });
         if (!user) {
-            return res.status(400).json({ message: 'User not found' });
+            return res.status(400).json({ message: 'Invalid credentials' });
         }
 
         const isMatch = await bcrypt.compare(password, user.password);
@@ -83,5 +83,35 @@ const loginUser = async (req, res) => {
         });
     }
 };
+const updateUsername = async (req, res) => {
+    try {
+        const { name } = req.body;
+        
+        // req.user is set by the protect middleware
+        const user = await User.findById(req.user._id);
+        
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
 
-module.exports = { registerUser, loginUser };
+        user.name = name;
+        await user.save();
+
+        res.json({
+            message: 'Username updated successfully',
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email
+            }
+        });
+    } catch (error) {
+        console.error('Update username error:', error);
+        res.status(500).json({ 
+            message: 'Server error during username update',
+            error: error.message 
+        });
+    }
+};
+
+module.exports = { registerUser, loginUser, updateUsername };

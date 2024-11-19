@@ -30,7 +30,7 @@ app.get('/health', (req, res) => {
 
 // Root endpoint
 app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to the Quiz API' });
+  res.json({ message: 'Welcome to the Sakemikke API' });
 });
 
 // Connect to MongoDB
