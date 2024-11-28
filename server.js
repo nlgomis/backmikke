@@ -1,9 +1,11 @@
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
+
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
 const quizRoutes = require('./routes/quizRoutes');
-
+const sakeRoutes = require('./routes/sakeRoutes')
 const app = express();
 
 // CORS configuration
@@ -22,7 +24,7 @@ app.use(express.json());
 // Routes
 app.use('/api/users', userRoutes);
 app.use('/api/quizzes', quizRoutes);
-
+app.use('/api/sake', sakeRoutes)
 // Health check endpoint (Azure uses this to monitor the app)
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'Server is running' });

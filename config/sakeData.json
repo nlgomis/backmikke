@@ -1,0 +1,758 @@
+[
+        {
+            "id": "001",
+            "name": "獺祭 純米大吟醸45",
+            "type": "純米大吟醸",
+            "region": "山口県",
+            "riceType": "山田錦",
+            "polishingRate": 45,
+            "price": 2183,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 50,
+                "fragrance": 85,
+                "acidity": 30,
+                "clarity": 80
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": null,
+            "classification": "淡麗甘口",
+            "description": "初心者から日本酒愛好家まで幅広い層に支持される日本酒で、特にその華やかな香りとクリアな後味が際立っている。控えめな酸味と穏やかなコクが、飲みやすさをさらに引き立てている。",
+            "keywords": [
+                "フルーティー",
+                "華やか",
+                "すっきり",
+                "上品",
+                "クリア"
+            ]
+        },
+        {
+            "id": "002",
+            "name": "獺祭 純米大吟醸 磨き三割九分",
+            "type": "純米大吟醸",
+            "region": "山口県",
+            "riceType": "山田錦",
+            "polishingRate": 39,
+            "price": 2750,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 50,
+                "fragrance": 90,
+                "acidity": 40,
+                "clarity": 80
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": null,
+            "classification": "淡麗甘口",
+            "description": "軽やかさと深みを兼ね備えており、特に冷やして飲むとそのフルーティーな香りが引き立ちます。",
+            "keywords": [
+                "華やか",
+                "フルーティー",
+                "上品"
+            ]
+        },
+        {
+            "id": "003",
+            "name": "獺祭 純米大吟醸 磨き二割三分",
+            "type": "純米大吟醸",
+            "region": "山口県",
+            "riceType": "山田錦",
+            "polishingRate": 23,
+            "price": 6380,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 60,
+                "fragrance": 90,
+                "acidity": 30,
+                "clarity": 80
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": null,
+            "classification": "淡麗甘口",
+            "description": "山田錦を23%まで精米し、白身魚の刺身や軽い味付けの和食と相性が良く、特別な日の乾杯酒としても最適です。",
+            "keywords": [
+                "華やか",
+                "フルーティー",
+                "繊細"
+            ]
+        },
+        {
+            "id": "004",
+            "name": "松竹梅白壁蔵「澪」",
+            "type": "日本酒（発泡性）",
+            "region": "京都府",
+            "riceType": "国産米",
+            "polishingRate": 65,
+            "price": 1225,
+            "volume": 750,
+            "alcoholContent": 5,
+            "sakeGrade": {
+                "body": 20,
+                "fragrance": 60,
+                "acidity": 40,
+                "clarity": 90
+            },
+            "tasteProfile": "甘口",
+            "sakeLevel": -70,
+            "classification": "淡麗甘口",
+            "description": "フルーティーで軽やかな、低アルコールで飲みやすく、日本酒が苦手な方や初心者向けとして人気が高いです。",
+            "keywords": [
+                "軽快",
+                "やさしい甘み",
+                "フルーティー"
+            ]
+        },
+        {
+            "id": "005",
+            "name": "発泡清酒 すず音",
+            "type": "日本酒（発泡性）",
+            "region": "宮城県",
+            "riceType": "国産米",
+            "polishingRate": 65,
+            "price": 880,
+            "volume": 300,
+            "alcoholContent": 5,
+            "sakeGrade": {
+                "body": 30,
+                "fragrance": 70,
+                "acidity": 50,
+                "clarity": 80
+            },
+            "tasteProfile": "甘口",
+            "sakeLevel": -80,
+            "classification": "淡麗甘口",
+            "description": "グラスに注いだ際に立ち上る繊細な泡が鈴の音を奏でるように見えることから名付けられた。アルコール度数は5%と低めで、甘酸っぱくフルーティーな味わいが特徴。",
+            "keywords": [
+                "甘い",
+                "スパークリング",
+                "繊細"
+            ]
+        },
+        {
+            "id": "006",
+            "name": "久保田 萬寿 純米大吟醸",
+            "type": "純米大吟醸",
+            "region": "新潟県",
+            "riceType": "五百万石、新潟県産米",
+            "polishingRate": 33,
+            "price": 4477,
+            "volume": 720,
+            "alcoholContent": 15,
+            "sakeGrade": {
+                "body": 70,
+                "fragrance": 80,
+                "acidity": 40,
+                "clarity": 75
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": 2,
+            "classification": "淡麗甘口",
+            "description": "「万物の寿を願う酒」という意味が込められて、飲みやすい口当たりや、重厚的でありながらフルーティーな香りが特徴。",
+            "keywords": [
+                "華やか",
+                "繊細",
+                "まろやか"
+            ]
+        },
+        {
+            "id": "007",
+            "name": "十四代 本丸 秘伝玉返し",
+            "type": "吟醸酒",
+            "region": "山形県",
+            "riceType": "国産米",
+            "polishingRate": 55,
+            "price": null,
+            "volume": 720,
+            "alcoholContent": 15,
+            "sakeGrade": {
+                "body": 50,
+                "fragrance": 60,
+                "acidity": 40,
+                "clarity": 80
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": null,
+            "classification": "淡麗甘口",
+            "description": "柔らかく優しい甘みと穏やかなマスカットのような香りが特徴で、十四代シリーズの中でも特に飲みやすいと評判。",
+            "keywords": [
+                "華やか",
+                "フルーティー",
+                "クリア"
+            ]
+        },
+        {
+            "id": "008",
+            "name": "梵 プレミアムスパークリング",
+            "type": "純米大吟醸",
+            "region": "福井県",
+            "riceType": "兵庫県口吉川産特A山田錦",
+            "polishingRate": 20,
+            "price": 8800,
+            "volume": 750,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 70,
+                "fragrance": 80,
+                "acidity": 50,
+                "clarity": 75
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": null,
+            "classification": "淡麗甘口",
+            "description": "兵庫県特A地区産の契約栽培山田錦を20%まで精米し、マイナス10℃で1年以上熟成させている高品質なスパークリング日本酒。上品で深みのある香りと、超微細な泡が特徴の薄にごり生原酒。",
+            "keywords": [
+                "上品",
+                "華やか",
+                "さわやか"
+            ]
+        },
+        {
+            "id": "009",
+            "name": "三井の寿「大吟醸 寒乃蔵」",
+            "type": "大吟醸",
+            "region": "福岡県",
+            "riceType": "糸島産山田錦100%",
+            "polishingRate": 40,
+            "price": 4950,
+            "volume": 720,
+            "alcoholContent": 17,
+            "sakeGrade": {
+                "body": 60,
+                "fragrance": 80,
+                "acidity": 40,
+                "clarity": 75
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": 1,
+            "classification": "淡麗甘口",
+            "description": "華やかな香りと繊細な味わいが特徴で、特に冷やして飲むとその魅力が引き立っている。刺身や軽い味付けの和食と相性が良いとされている。",
+            "keywords": [
+                "華やか",
+                "繊細",
+                "クリア"
+            ]
+        },
+        {
+            "id": "010",
+            "name": "醸し人九平次「EAU DU DÉSIR」",
+            "type": "純米大吟醸",
+            "region": "愛知県",
+            "riceType": "山田錦",
+            "polishingRate": 50,
+            "price": 2365,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 70,
+                "fragrance": 85,
+                "acidity": 45,
+                "clarity": 60
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": null,
+            "classification": "濃醇甘口",
+            "description": "フレンチや和食の繊細な料理ともよく合い、上品でフルーティな香りが、食中酒としても優れた評価を得ています。",
+            "keywords": [
+                "エレガント",
+                "滑らか",
+                "フルーティー"
+            ]
+        },
+        {
+            "id": "011",
+            "name": "梵‧超吟",
+            "type": "純米大吟醸",
+            "region": "福井県",
+            "riceType": "兵庫縣産特Ａ地區山田錦",
+            "polishingRate": 20,
+            "price": 14300,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 80,
+                "fragrance": 90,
+                "acidity": 30,
+                "clarity": 65
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": null,
+            "classification": "濃醇甘口",
+            "description": "約5年間、-10℃の氷温で熟成され、豊かな果実香と滑らかで深みのある味わいが特徴。日本の酒文化を代表する珠玉の名酒。",
+            "keywords": [
+                "芳醇",
+                "最高級",
+                "華やか"
+            ]
+        },
+        {
+            "id": "012",
+            "name": "十四代 純米吟醸 龍泉",
+            "type": "純米大吟醸",
+            "region": "山形県",
+            "riceType": "兵庫県特Ａ地区産山田錦100％使用",
+            "polishingRate": 35,
+            "price": 17000,
+            "volume": 720,
+            "alcoholContent": 15,
+            "sakeGrade": {
+                "body": 80,
+                "fragrance": 90,
+                "acidity": 50,
+                "clarity": 70
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": null,
+            "classification": "濃醇甘口",
+            "description": "山形県の高木酒造が醸造する希少な日本酒で、特に入手困難な銘柄として知られている。口当たりは滑らかでありながら、フルーティーな香りと濃厚な旨味が特徴。",
+            "keywords": [
+                "上品",
+                "華やか",
+                "濃醇"
+            ]
+        },
+        {
+            "id": "013",
+            "name": "鳳凰美田 純米吟醸 「Black Phoenix」",
+            "type": "純米吟醸",
+            "region": "栃木県",
+            "riceType": "兵庫県産 愛山",
+            "polishingRate": 55,
+            "price": 2200,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 70,
+                "fragrance": 75,
+                "acidity": 60,
+                "clarity": 65
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": 0,
+            "classification": "濃醇甘口",
+            "description": "栃木県の小林酒造が醸す限定品で、兵庫県産の希少な酒米「愛山」を使用している。厚みのある酸味と柔らかで芳醇な口当たりが特徴。",
+            "keywords": [
+                "芳醇",
+                "スッキリ",
+                "やわらか"
+            ]
+        },
+        {
+            "id": "014",
+            "name": "久保田 純米大吟醸",
+            "type": "純米大吟醸",
+            "region": "新潟県",
+            "riceType": "五百万石",
+            "polishingRate": 50,
+            "price": 1914,
+            "volume": 720,
+            "alcoholContent": 15,
+            "sakeGrade": {
+                "body": 45,
+                "fragrance": 75,
+                "acidity": 35,
+                "clarity": 85
+            },
+            "tasteProfile": "辛口",
+            "sakeLevel": 0,
+            "classification": "淡麗辛口",
+            "description": "様々な料理との相性も良く、特に和食やシンプルな味付けの料理と組み合わせると引き立ちます。",
+            "keywords": [
+                "スッキリ",
+                "フルーティー",
+                "クリア"
+            ]
+        },
+        {
+            "id": "015",
+            "name": "久保田 千寿 吟醸",
+            "type": "吟醸酒",
+            "region": "新潟県",
+            "riceType": "五百万石",
+            "polishingRate": 50,
+            "price": 1320,
+            "volume": 720,
+            "alcoholContent": 15,
+            "sakeGrade": {
+                "body": 40,
+                "fragrance": 50,
+                "acidity": 35,
+                "clarity": 85
+            },
+            "tasteProfile": "辛口",
+            "sakeLevel": 5,
+            "classification": "淡麗辛口",
+            "description": "穏やかな香りとスッキリとした飲み口が特徴で、冷酒からぬる燗まで楽しむことができる柔軟な味わいの淡麗辛口日本酒。",
+            "keywords": [
+                "スッキリ",
+                "クリア",
+                "軽やか"
+            ]
+        },
+        {
+            "id": "016",
+            "name": "八海山 清酒",
+            "type": "普通酒",
+            "region": "新潟県",
+            "riceType": "五百万石、他",
+            "polishingRate": 60,
+            "price": 995,
+            "volume": 720,
+            "alcoholContent": 15.5,
+            "sakeGrade": {
+                "body": 30,
+                "fragrance": 40,
+                "acidity": 35,
+                "clarity": 85
+            },
+            "tasteProfile": "辛口",
+            "sakeLevel": 5,
+            "classification": "淡麗辛口",
+            "description": "料理との相性を重視して造られており、雑味のないクリアな口当たりと、キレのある辛口が楽しめます。",
+            "keywords": [
+                "すっきり",
+                "キレ",
+                "シャープ"
+            ]
+        },
+        {
+            "id": "017",
+            "name": "特別本醸造 八海山",
+            "type": "特別本醸造",
+            "region": "新潟県",
+            "riceType": "五百万石、トドロキワセ、他",
+            "polishingRate": 55,
+            "price": 1386,
+            "volume": 720,
+            "alcoholContent": 15.5,
+            "sakeGrade": {
+                "body": 40,
+                "fragrance": 50,
+                "acidity": 35,
+                "clarity": 85
+            },
+            "tasteProfile": "辛口",
+            "sakeLevel": 4,
+            "classification": "淡麗辛口",
+            "description": "新潟県の八海醸造が手掛ける日本酒で、やわらかな口当たりと淡麗な味わいが特徴。冷やしても燗にしても楽しめる、八海山を代表するお酒。",
+            "keywords": [
+                "スッキリ",
+                "やわらか",
+                "クリア"
+            ]
+        },
+        {
+            "id": "018",
+            "name": "純米吟醸 八海山 55%",
+            "type": "純米吟醸",
+            "region": "新潟県",
+            "riceType": "五百万石、こしいぶき、トドロキワセ他",
+            "polishingRate": 55,
+            "price": 1584,
+            "volume": 720,
+            "alcoholContent": 15.5,
+            "sakeGrade": {
+                "body": 40,
+                "fragrance": 50,
+                "acidity": 45,
+                "clarity": 85
+            },
+            "tasteProfile": "辛口",
+            "sakeLevel": 1,
+            "classification": "淡麗辛口",
+            "description": "キレの良い辛口と米の旨味が絶妙に調和した純米吟醸酒で、冷酒からお燗まで、幅広い温度で風味を楽しむことができます。",
+            "keywords": [
+                "キレ",
+                "滑らか",
+                "すっきり"
+            ]
+        },
+        {
+            "id": "019",
+            "name": "黒龍 純吟",
+            "type": "純米吟醸",
+            "region": "福井県",
+            "riceType": "五百万⽯",
+            "polishingRate": 55,
+            "price": 1760,
+            "volume": 720,
+            "alcoholContent": 15.5,
+            "sakeGrade": {
+                "body": 60,
+                "fragrance": 65,
+                "acidity": 45,
+                "clarity": 70
+            },
+            "tasteProfile": "やや辛め",
+            "sakeLevel": 4.5,
+            "classification": "淡麗辛口",
+            "description": "米本来の旨味を引き出しつつ、爽やかな飲み心地を追求した純米吟醸酒。味と香りのハーモニーが醸す深い旨さが特徴。",
+            "keywords": [
+                "爽やか",
+                "キレ",
+                "上品"
+            ]
+        },
+        {
+            "id": "020",
+            "name": "黒龍 大吟醸",
+            "type": "大吟醸",
+            "region": "福井県",
+            "riceType": "⼭⽥錦",
+            "polishingRate": 50,
+            "price": 2750,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 60,
+                "fragrance": 70,
+                "acidity": 40,
+                "clarity": 80
+            },
+            "tasteProfile": "やや辛め",
+            "sakeLevel": 4.0,
+            "classification": "淡麗辛口",
+            "description": "福井県の黒龍酒造が醸す日本酒で、ふくよかな香り、透明な喉ごし、爽やかな飲み心地が人気の大吟醸。",
+            "keywords": [
+                "クリア",
+                "爽やか",
+                "ふくよかな香り"
+            ]
+        },
+        {
+            "id": "021",
+            "name": "黒龍 しずく 純米大吟醸",
+            "type": "純米大吟醸",
+            "region": "兵庫県",
+            "riceType": "兵庫県東条産山田錦",
+            "polishingRate": 35,
+            "price": 6600,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 60,
+                "fragrance": 80,
+                "acidity": 40,
+                "clarity": 85
+            },
+            "tasteProfile": "辛口",
+            "sakeLevel": null,
+            "classification": "淡麗辛口",
+            "description": "最高級の酒米「山田錦」を使用し、じっくりと丁寧に低温発酵させた大吟醸酒。透き通るように綺麗な味わいと、グレープフルーツや梅の花の香りが特徴。",
+            "keywords": [
+                "華やか",
+                "繊細",
+                "フルーティー"
+            ]
+        },
+        {
+            "id": "022",
+            "name": "獺祭 純米大吟醸 にごりスパークリング45",
+            "type": "純米大吟醸",
+            "region": "山口県",
+            "riceType": "山田錦",
+            "polishingRate": 45,
+            "price": 2255,
+            "volume": 720,
+            "alcoholContent": 14,
+            "sakeGrade": {
+                "body": 50,
+                "fragrance": 70,
+                "acidity": 40,
+                "clarity": 80
+            },
+            "tasteProfile": "やや甘め",
+            "sakeLevel": null,
+            "classification": "淡麗辛口",
+            "description": "にごり酒ならではの米の甘みと、爽やかな炭酸が調和し、繊細かつ存在感のある味わいが楽しめます。",
+            "keywords": [
+                "甘み",
+                "爽やか",
+                "繊細"
+            ]
+        },
+        {
+            "id": "023",
+            "name": "春鹿 純米超辛口",
+            "type": "純米酒",
+            "region": "奈良県",
+            "riceType": "五百万石",
+            "polishingRate": 60,
+            "price": 1793,
+            "volume": 720,
+            "alcoholContent": 15,
+            "sakeGrade": {
+                "body": 50,
+                "fragrance": 40,
+                "acidity": 35,
+                "clarity": 85
+            },
+            "tasteProfile": "辛口",
+            "sakeLevel": 12,
+            "classification": "淡麗辛口",
+            "description": "日本酒度+12の超辛口ながら、軽快でまろやかな口当たりが特徴。高精白された米と硬水の仕込み水を使用し、キレの良い味わいを実現している。",
+            "keywords": [
+                "シャープ",
+                "軽快",
+                "まろやか"
+            ]
+        },
+        {
+            "id": "024",
+            "name": "ほまれ麒麟 純米大吟醸",
+            "type": "純米大吟醸",
+            "region": "新潟県",
+            "riceType": "兵庫産「山田錦」、新潟産「五百万石」",
+            "polishingRate": 50,
+            "price": 2750,
+            "volume": 720,
+            "alcoholContent": 15,
+            "sakeGrade": {
+                "body": 60,
+                "fragrance": 70,
+                "acidity": 40,
+                "clarity": 75
+            },
+            "tasteProfile": "やや辛め",
+            "sakeLevel": 5,
+            "classification": "淡麗辛口",
+            "description": "兵庫県産の山田錦と新潟県産の五百万石を等量ブレンドして、上品な香りときめ細やかな旨味、そして滑らかな喉ごしが特徴。冷やしても燗でも楽しめるお酒として評価されている。",
+            "keywords": [
+                "華やか",
+                "上品",
+                "キレ"
+            ]
+        },
+        {
+            "id": "025",
+            "name": "飛騨自慢鬼ころし本醸造",
+            "type": "本醸造",
+            "region": "岐阜県高山市",
+            "riceType": "ひだほまれ",
+            "polishingRate": 68,
+            "price": 1314,
+            "volume": 720,
+            "alcoholContent": 15.5,
+            "sakeGrade": {
+                "body": 50,
+                "fragrance": 40,
+                "acidity": 45,
+                "clarity": 80
+            },
+            "tasteProfile": "やや辛め",
+            "sakeLevel": 3,
+            "classification": "淡麗辛口",
+            "description": "岐阜県高山市の老田酒造店が醸造する日本酒で、江戸時代中期から続く伝統的な辛口酒。サラリとした端正な飲み口に、適度な旨味を感じる淡麗辛口の味わいが特徴。",
+            "keywords": [
+                "サラリとした",
+                "キレ",
+                "穏やか"
+            ]
+        },
+        {
+            "id": "026",
+            "name": "久保田 碧寿",
+            "type": "純米大吟醸",
+            "region": "新潟県",
+            "riceType": "五百万石",
+            "polishingRate": 50,
+            "price": 2540,
+            "volume": 720,
+            "alcoholContent": 15,
+            "sakeGrade": {
+                "body": 70,
+                "fragrance": 60,
+                "acidity": 50,
+                "clarity": 65
+            },
+            "tasteProfile": "やや辛め",
+            "sakeLevel": 2,
+            "classification": "濃醇辛口",
+            "description": "山廃仕込み特有の深みとコクがありながら、久保田シリーズらしいキレの良さも兼ね備えている。冷やしはもちろん、特に燗酒にすると、旨味が一層引き立ち、豊かな味わいを楽しめます。",
+            "keywords": [
+                "コク",
+                "キレ",
+                "穏やか"
+            ]
+        },
+        {
+            "id": "027",
+            "name": "天狗舞 古古酒 純米大吟醸",
+            "type": "純米大吟醸",
+            "region": "石川県",
+            "riceType": "兵庫県特A地区産山田錦",
+            "polishingRate": 40,
+            "price": 14300,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 75,
+                "fragrance": 70,
+                "acidity": 40,
+                "clarity": 60
+            },
+            "tasteProfile": "やや辛め",
+            "sakeLevel": 3.0,
+            "classification": "濃醇辛口",
+            "description": "2年以上の熟成によって穏やかな香りと複雑な風味が加わり、口当たりが非常に滑らかでバランスの取れた味わいが楽しめる。",
+            "keywords": [
+                "深みのある",
+                "穏やか",
+                "滑らか"
+            ]
+        },
+        {
+            "id": "028",
+            "name": "天狗舞 山廃純米 ひやおろし",
+            "type": "純米酒",
+            "region": "石川県",
+            "riceType": "五百万石",
+            "polishingRate": 60,
+            "price": 1650,
+            "volume": 720,
+            "alcoholContent": 18,
+            "sakeGrade": {
+                "body": 70,
+                "fragrance": 60,
+                "acidity": 50,
+                "clarity": 50
+            },
+            "tasteProfile": "やや辛め",
+            "sakeLevel": 3,
+            "classification": "濃醇辛口",
+            "description": "石川県の車多酒造が醸す季節限定の日本酒。山廃仕込み特有の酸味と旨味が調和し、豊かでキレの良い香味が特徴。",
+            "keywords": [
+                "濃醇",
+                "穏やか",
+                "酸味"
+            ]
+        },
+        {
+            "id": "029",
+            "name": "菊姫 山廃純米",
+            "type": "純米酒",
+            "region": "石川県",
+            "riceType": "兵庫県三木市吉川町・特Ａ地区産「山田錦」",
+            "polishingRate": 70,
+            "price": 1400,
+            "volume": 720,
+            "alcoholContent": 16,
+            "sakeGrade": {
+                "body": 80,
+                "fragrance": 70,
+                "acidity": 60,
+                "clarity": 50
+            },
+            "tasteProfile": "やや辛め",
+            "sakeLevel": null,
+            "classification": "濃醇辛口",
+            "description": "昭和58年に日本酒業界初となる「山廃仕込」と表示した純米酒として発売された。山廃仕込み特有の力強い酸味と濃醇な旨味が特徴で、好き嫌いのはっきり分かれる「男酒」として個性が光る。",
+            "keywords": [
+                "濃醇",
+                "酸味",
+                "キレ"
+            ]
+        }
+    ]
