@@ -6,6 +6,7 @@ const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
 const quizRoutes = require('./routes/quizRoutes');
 const sakeRoutes = require('./routes/sakeRoutes')
+const likeRoutes = require('./routes/likeRoutes')
 const app = express();
 
 // CORS configuration
@@ -25,6 +26,7 @@ app.use(express.json());
 app.use('/api/users', userRoutes);
 app.use('/api/quizzes', quizRoutes);
 app.use('/api/sake', sakeRoutes)
+app.use('/api/likes', likeRoutes)
 // Health check endpoint (Azure uses this to monitor the app)
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'Server is running' });
