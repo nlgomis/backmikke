@@ -121,6 +121,45 @@ const updateUsername = async (req, res) => {
     }
 };
 
+const updateUserImage = async (req, res) => {
+    try {
+        const { image } = req.body;
+        
+        // Validate image number is between 1-21
+        const imageNum = parseInt(image);
+        if (isNaN(imageNum) || imageNum < 1 || imageNum > 21) {
+            return res.status(400).json({ message: 'Invalid image number. Must be between 1 and 21.' });
+        }
+
+        const user = await User.findById(req.user._id);
+        
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        // Update the image
+        user.image = image.toString();
+        await user.save();
+
+        // Return updated user data
+        res.json({
+            message: 'Profile image updated successfully',
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                quizzes: user.quizzes || [],
+                image: user.image
+            }
+        });
+    } catch (error) {
+        console.error('Update image error:', error);
+        res.status(500).json({ 
+            message: 'Server error during image update',
+            error: error.message 
+        });
+    }
+};
 const updateQuizzes = async (req, res) => {
     try {
         const { quizResult } = req.body;
@@ -200,5 +239,6 @@ module.exports = {
     loginUser, 
     updateUsername, 
     updateQuizzes,
-    getUserQuizzes
+    getUserQuizzes,
+    updateUserImage
 };
