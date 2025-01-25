@@ -19,7 +19,12 @@ const userSchema = new mongoose.Schema({
     quizzes: {
         type: [String],
         default: []
+    },
+    image: {
+        type: String,
+        required: true,
     }
+
 }, { 
     timestamps: true 
 });

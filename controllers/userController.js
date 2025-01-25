@@ -18,10 +18,12 @@ const registerUser = async (req, res) => {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
 
+        const randomNum = Math.floor(Math.random() * 21) + 1; // Generates number between 1-21
         const user = await User.create({
             name,
             email,
-            password: hashedPassword
+            password: hashedPassword,
+            image: randomNum.toString() // Convert number to string
         });
 
         console.log('User created successfully:', user);
@@ -31,7 +33,8 @@ const registerUser = async (req, res) => {
             user: {
                 id: user._id,
                 name: user.name,
-                email: user.email
+                email: user.email,
+                image: user.image
             }
         });
     } catch (error) {
@@ -74,7 +77,8 @@ const loginUser = async (req, res) => {
                 id: user._id,
                 name: user.name,
                 email: user.email,
-                quizzes: user.quizzes || []
+                quizzes: user.quizzes || [],
+                image: user.image
             }
         });
     } catch (error) {
@@ -144,7 +148,8 @@ const updateQuizzes = async (req, res) => {
                 id: user._id,
                 name: user.name,
                 email: user.email,
-                quizzes: user.quizzes
+                quizzes: user.quizzes,
+                image: user.image
             }
         });
     } catch (error) {
