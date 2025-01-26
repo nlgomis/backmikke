@@ -213,7 +213,8 @@ const getUserQuizzes = async (req, res) => {
 
         const sakePromises = reversedQuizzes.map(async (sakeName) => {
             const sake = await Sake.findOne({
-                name: { $regex: sakeName, $options: 'i' }
+                name: { $regex: sakeName, $options: 'i' },
+                url: sake.url
             });
             return sake ? {
                 id: sake.id,
