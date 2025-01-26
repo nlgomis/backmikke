@@ -21,7 +21,8 @@ const sakeSchema = new mongoose.Schema({
     sakeLevel: mongoose.Schema.Types.Mixed,  // Using Mixed type to handle null
     classification: String,
     description: String,
-    keywords: [String]
+    keywords: [String],
+    url: String,
 }, {
     collection: 'sake',  // Explicitly specify the collection name
     versionKey: false    // This removes the __v field
