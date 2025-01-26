@@ -19,7 +19,7 @@ router.post('/login', loginUser);
 
 // Protected routes
 router.put('/update-username', protect, updateUsername);
-router.post('/update-quizzes', protect, updateQuizzes);
+router.put('/update-quizzes', protect, updateQuizzes);
 router.get('/quiz-history', protect, getUserQuizzes);
 router.put('/update-image', protect, updateUserImage);  // New route
 
