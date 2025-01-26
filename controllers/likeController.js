@@ -34,6 +34,7 @@ const getLikedSakes = async (req, res) => {
     
     const likedSakes = await Sake.find({
       id: { $in: likes.map(like => like.sakeId) }
+      
     });
     
     res.json(likedSakes);

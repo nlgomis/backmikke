@@ -217,7 +217,8 @@ const getUserQuizzes = async (req, res) => {
             });
             return sake ? {
                 id: sake.id,
-                name: sakeName
+                name: sakeName,
+                url: sake.url,
             } : null;
         });
 
